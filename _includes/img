@@ -1,0 +1,6 @@
+{% assign x = include.key|slice:0,4 %}
+{% if x == "http" %}
+![{{title}}]({{include.key}})
+{% else %}
+![{{title}}]({{site.asseturl}}/img/{{include.key}})
+{% endif %}

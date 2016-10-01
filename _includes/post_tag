@@ -1,0 +1,1 @@
+<div class="row text-center">{% for t in page.tags %}<div class="bg-primary">{{t}}</div>{% for p in site.tags[t] %}{% include image %}{% endfor %}<div class="clearfix"></div>{% endfor %}</div>
