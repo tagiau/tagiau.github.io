@@ -11,8 +11,8 @@
 		</a>
 	{% endif %}
 		<b>{{p.title}}</b>
-		<p><i class="glyphicon glyphicon-tags"></i>&nbsp;<span>{{p.tag}}</span>
+		<!--p><i class="glyphicon glyphicon-tags"></i>&nbsp;<span>{{p.tag}}</span>
 		<br>{{p.excerpt|strip_html}}
-		<a href="{{site.baseurl}}{{p.url}}">{{site.lang.read_more}}</a></p>
+		<a href="{{site.baseurl}}{{p.url}}">{{site.lang.read_more}}</a></p-->
 	</div>
 </div>
