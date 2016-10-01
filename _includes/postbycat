@@ -1,4 +1,4 @@
 {% assign cats = (site.posts|where:'category',include.key) %}
-{% for post in cats %}
+{% for p in cats %}
   {% include itemgrid %}
 {% endfor %}
