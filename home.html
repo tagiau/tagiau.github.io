@@ -2,10 +2,10 @@
 layout: page
 title: home
 ---
-{% include pagination_up %}
+{% include pagination %}
 
 {% for p in paginator.posts %}
   {% include itemgrid %}
 {% endfor %}
 
-{% include pagination_up %}
+{% include pagination %}
