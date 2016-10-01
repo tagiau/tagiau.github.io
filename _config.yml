@@ -3,6 +3,9 @@ subline: "ta giau : tri, tiền"
 baseurl: "http://tagiau.net"
 asseturl: "/assets"
 permalink: /:categories/:title/
+excerpt_separator: "<!-- more -->"
 paginate: 30
 paginate_path: "/page:num"
 ga: x-xxxxx-x
+lang:
+ read_more: "...read more"
