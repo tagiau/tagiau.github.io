@@ -1,1 +1,4 @@
-<div class="text-center"><div class="bg-primary">{{page.title}}</div>{% for p in site.categories[{{include.key}}] %}{% include image %}{% endfor %}</div>
+{% assign cats = (site.posts|where:'category',include.key) %}
+{% for post in cats %}
+  {% include itemgrid %}
+{% endfor %}

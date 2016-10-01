@@ -1,1 +1,18 @@
-<a href="{{site.baseurl}}{{p.url}}" class="btn btn-default wfixed">{% if (p.thumb) %}{% assign x = p.thumb|slice:0,4 %}{% if x == "http" %}<img src="{{p.thumb}}" alt="{{p.title}}" class="img-responsive"/>{% else %}<img src="{{site.asseturl}}/img/{{p.thumb}}.jpg" class="img-responsive" alt="{{p.title}}"/>{% endif %}{% else %}{{p.title}}{% endif %}</a>
+<div id="item" class="col-sm-6 col-md-4">
+	<div class="row">
+	{% if (p.thumb) %}
+		<a href="{{site.baseurl}}{{p.url}}">
+		{% assign x = p.thumb|slice:0,4 %}
+		{% if x == "http" %}
+		<img src="{{p.thumb}}" alt="{{p.title}}" class="pull-left img-thumbnail"/>
+		{% else %}
+		<img src="{{site.asseturl}}/img/{{p.thumb}}.jpg" class="pull-left img-thumbnail" alt="{{p.title}}"/>
+		{% endif %}
+		</a>
+	{% endif %}
+		<b>{{p.title}}</b>
+		<p><i class="glyphicon glyphicon-tags"></i>&nbsp;<span>{{p.tag}}</span>
+		<br>{{p.excerpt|strip_html}}
+		<a href="{{site.baseurl}}{{p.url}}">{{site.lang.read_more}}</a></p>
+	</div>
+</div>
