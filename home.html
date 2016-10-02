@@ -2,7 +2,7 @@
 layout: page
 title: home
 ---
-{% assign cats = (site.posts|where:'tag','hot') %}
-{% for p in cats %}
-{% include itemgrid %}
+{% assign tags = (site.posts|where:'tag','hot') %}
+{% for p in tags %}
+{{p.url}}
 {% endfor %}
