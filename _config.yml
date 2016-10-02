@@ -1,5 +1,5 @@
 name: "tagiau"
-theme: "classic"
+theme: "default"
 baseurl: "http://tagiau.net"
 asseturl: "/assets"
 permalink: /:categories/:title/
