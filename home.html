@@ -1,10 +1,6 @@
 ---
 layout: page
-title: home
+title: Trang chu
 ---
-{% include pagi %}
-<div class="text-center">
-{% for p in paginator.posts %}
-  {% include grid %}
-{% endfor %}
-</div>
+
+{% include themes/{{site.theme}}/home.html %}

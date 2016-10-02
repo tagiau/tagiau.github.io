@@ -1,8 +1,12 @@
-name: "tagiau"
-theme: "default"
-baseurl: "http://tagiau.net"
-asseturl: "/assets"
-permalink: /:categories/:title/
-paginate: 3
-paginate_path: "/page:num"
-ga: x-xxxxx-x
+# Site settings
+baseurl: ""
+asseturl: "/asset"
+name: "tAgiAu"
+theme: "classic"
+
+# Build settings
+markdown: kramdown
+# permalink: ordinal
+permalink: /:categories/:title
+excerpt_separator: "\n\n"
+paginate: 12

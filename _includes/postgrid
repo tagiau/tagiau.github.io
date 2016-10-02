@@ -1,0 +1,5 @@
+<div class="row">
+{% for p in site.posts %}
+  {% include themes/{{site.theme}}/viewgrid.html %}
+{% endfor %}
+</div>

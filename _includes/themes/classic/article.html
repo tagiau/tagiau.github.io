@@ -1,0 +1,16 @@
+<div class="container-fluid">
+  <div class="row">
+		<div class="col-md-9">
+			<div class="row">
+				<div class="thumbnail">
+				<img align="left" src="{{site.baseurl}}/thumb/{{page.thumb}}" class="img-thumbnail"/>
+				<h3>{{page.title}}</h3>
+					{{content}}
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+		{% include post_cat %}
+		</div>
+	</div><!-- .row -->
+</div>
