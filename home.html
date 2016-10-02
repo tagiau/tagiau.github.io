@@ -5,6 +5,7 @@ title: home
 {% include pagination %}
 
 {% for p in paginator.posts %}
+{{p.url}}
   {% include itemgrid %}
 {% endfor %}
 
