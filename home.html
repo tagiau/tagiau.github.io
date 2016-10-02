@@ -2,11 +2,7 @@
 layout: page
 title: home
 ---
-{% include pagination %}
-
-{% for p in paginator.posts %}
-{{p.url}}
-  {% include itemgrid %}
+{% assign cats = (site.posts|where:'tag','hot') %}
+{% for p in cats %}
+{% include itemgrid %}
 {% endfor %}
-
-{% include pagination %}
