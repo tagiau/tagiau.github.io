@@ -2,7 +2,9 @@
 layout: page
 title: home
 ---
-{% assign tags = (site.posts|where:'tag','hot') %}
-{% for p in tags %}
-{{p.url}}
+{% include pagi %}
+<div class="text-center">
+{% for p in paginator.posts %}
+  {% include grid %}
 {% endfor %}
+</div>

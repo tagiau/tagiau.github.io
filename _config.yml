@@ -1,8 +1,8 @@
 name: "tagiau"
-subline: "sologan"
+theme: "classic"
 baseurl: "http://tagiau.net"
 asseturl: "/assets"
 permalink: /:categories/:title/
-paginate: 30
+paginate: 3
 paginate_path: "/page:num"
 ga: x-xxxxx-x
