@@ -1,9 +1,0 @@
-<div class="row">
-	<ol>
-	{% for tag in page.tags %}
-		{% for post in site.tags[tag] limit:5%}
-		{% include themes/{{site.theme}}/viewlist.html %}
-		{% endfor %}
-	{% endfor %}
-	</ol>
-</div>

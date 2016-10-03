@@ -1,12 +1,12 @@
 # Site settings
 baseurl: ""
-asseturl: "/asset"
-name: "tAgiAu"
-theme: "classic"
+asseturl: ""
+name: tAgiAu
+theme: classic
 
 # Build settings
 markdown: kramdown
 # permalink: ordinal
-permalink: /:categories/:title
+permalink: /:categories/:title.html
 excerpt_separator: "\n\n"
 paginate: 12

@@ -1,4 +1,0 @@
-<div class="row bg-success">
-<a href="{{site.baseurl}}" class="btn btn-info"><i class="glyphicon glyphicon-home"></i></a>
-<b>{{page.title}}</b>
-</div>
